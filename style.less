@@ -7,6 +7,7 @@
 
 @reserv_color-1: darkgoldenrod; 
 @reserv_color-2:rgb(116, 101, 66);
+@djs-color: rgb(197, 197, 197);
 
 .body {
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;;
@@ -43,3 +44,99 @@
     }
 }
 
+
+.festival {
+    color: rgb(201, 201, 127);
+    font-family: GABRIOLA;
+    font-size: 3rem;
+}
+.festival-low {
+    font-size: 2rem;
+}
+.top-festival {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 20px;
+}
+.top-festival__img {
+    max-width: 1000px;
+}
+
+.video {
+    width: 70%;
+    position: relative;
+    padding-top: 36.25%;
+    margin-bottom: 30px;
+  }
+  .video iframe, .video object, .video embed{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+
+  @columns: 15;
+
+  .djs {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+.djs-headliners {
+    text-align: center;
+    background-color: rgba(19, 15, 15, 0.5);
+    border: 2px solid rgba(41, 1, 1, 0.6);
+    margin-right: 15px;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    overflow: hidden;
+}
+
+.djs__name {
+    color: @djs-color;
+    position: relative;
+    top: -20%;
+    background-image: linear-gradient(to bottom, rgb(94, 94, 94), rgb(88, 88, 88), rgb(82, 82, 82), rgb(76, 76, 76), rgb(70, 70, 70), rgb(64, 64, 64), rgb(58, 58, 58), rgb(52, 52, 52), rgb(46, 46, 46), rgb(40, 40, 40), rgb(34, 34, 34), rgb(28, 28, 28));
+    opacity: 0.9;
+}
+
+.djs__name_custom {
+    color: @djs-color;
+    position: relative;
+    top: -30%;
+    background-image: linear-gradient(to bottom, rgb(94, 94, 94), rgb(88, 88, 88), rgb(82, 82, 82), rgb(76, 76, 76), rgb(70, 70, 70), rgb(64, 64, 64), rgb(58, 58, 58), rgb(52, 52, 52), rgb(46, 46, 46), rgb(40, 40, 40), rgb(34, 34, 34), rgb(28, 28, 28));
+    opacity: 0.9;
+}
+
+.djs-head-text {
+    text-align: center;
+    font-size: 4rem;
+    color: @djs-color;
+    margin-bottom: 30px;
+}
+
+.djs-list {
+    color: @djs-color;
+    margin: 10px;
+}
+
+.img-center {
+    position: relative;
+    margin-right: 30%;
+    margin-left: 30%;
+}
+
+.top-100-djs {
+    white-space: pre-line;
+    color: @djs-color;
+    margin-bottom: 30px;
+}
