@@ -1,0 +1,104 @@
+// main: ../../style.less
+
+@sidebar-buttons_color: linear-gradient(to right, rgb(227, 167, 36), rgb(224, 157, 35), rgb(220, 148, 35), rgb(217, 138, 34), rgb(213, 129, 34), rgb(210, 119, 33), rgb(206, 110, 33), rgb(203, 100, 32), rgb(199, 91, 32), rgb(196, 81, 31), rgb(192, 72, 31), rgb(189, 62, 30));
+@sidebar-buttons_color-hover: linear-gradient(to right, rgb(207, 152, 33), rgb(203, 143, 32), rgb(199, 133, 31), rgb(195, 124, 29), rgb(191, 114, 28), rgb(187, 105, 27), rgb(183, 95, 26), rgb(179, 86, 25), rgb(175, 76, 24), rgb(171, 67, 22), rgb(167, 57, 21), rgb(163, 48, 20));
+
+.sidebar {
+    float: right;
+    width: 20%;
+    height: auto;
+    padding-bottom: 20px;
+    background-image: linear-gradient(to bottom right, rgb(68, 54, 89), rgb(65, 52, 85), rgb(63, 51, 81), rgb(60, 49, 76), rgb(58, 48, 72), rgb(55, 46, 68), rgb(53, 45, 64), rgb(50, 43, 60), rgb(48, 42, 56), rgb(45, 40, 51), rgb(43, 39, 47), rgb(40, 37, 43));
+    border: 1px solid black;
+    border-radius: 25px;
+    box-shadow: 1px 2px 2px rgba(150, 164, 165, 0.15);
+    opacity: 0.6;
+    transition-delay: 0.1s;
+    &:hover {
+        opacity: 0.85;
+        transition-delay: 0.1s;
+    }
+}
+
+.sidebar__heading {
+    color: white;
+    font-size: 2rem;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+.sidebar__festival-name {
+    color: rgb(229, 255, 211);
+    font-size: 1.8rem; 
+    margin-top: 2px;
+    margin-bottom: 5px;
+    width: auto;
+
+}
+
+.sidebar__festival-info {
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem; 
+}
+
+.sidebar__buttons__all-events {
+    font-size: 1.8rem;
+    position: relative;
+    text-align: center;
+    color: white;
+    width: 80%;
+    height: 3rem;
+    padding: 3px;
+    background-image: @sidebar-buttons_color;
+    border-radius: 15px;
+    left: 10%;
+
+    &:hover {
+        color: darken(white, 10%);
+        background-image: @sidebar-buttons_color-hover;
+    }
+}
+
+.sidebar__buttons__more-info {
+    font-size: 1.8rem;
+    position: relative;
+    text-align: center;
+    color: white;
+    width: 100px;
+    height: 3rem;
+    padding: 4px;
+    padding-left: 18px;
+    padding-right: 18px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-image: @sidebar-buttons_color;
+    border-radius: 15px;
+
+    &:hover {
+        color: darken(white, 10%);
+        background-image: @sidebar-buttons_color-hover;
+    }
+}
+
+.sidebar__buttons__tickets {
+    font-size: 1.8rem;
+    position: relative;
+    text-align: center;
+    color: rgb(43, 43, 43);
+    width: 100px;
+    height: 3rem;
+    padding: 4px;
+    padding-left: 18px;
+    padding-right: 18px;
+    margin-top: 15px;
+    background-color: white;
+    border-radius: 15px;
+   
+    &:hover {
+        color: darken(rgb(43, 43, 43), 10%);
+        background-color: rgb(255, 249, 235);
+    }
+}
+.sidebar__buttons {
+    text-decoration: none !important;
+}

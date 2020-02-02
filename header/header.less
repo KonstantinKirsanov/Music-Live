@@ -1,0 +1,38 @@
+// main: ../style.less
+
+@bg-image: linear-gradient(to bottom right, rgb(86, 93, 179), rgb(85, 89, 170), rgb(84, 85, 162), rgb(84, 80, 153), rgb(83, 76, 144), rgb(82, 72, 136), rgb(81, 68, 127), rgb(80, 64, 119), rgb(79, 60, 110), rgb(79, 55, 101), rgb(78, 51, 93), rgb(77, 47, 84));
+@bg-image_down: linear-gradient(to bottom, rgb(86, 93, 179), rgb(86, 98, 180), rgb(87, 104, 182), rgb(87, 109, 183), rgb(88, 115, 184), rgb(88, 120, 186), rgb(89, 126, 187), rgb(89, 131, 189), rgb(90, 137, 190), rgb(90, 142, 191), rgb(91, 148, 193), rgb(91, 153, 194));
+@a_color_hover: rgb(236, 241, 177);
+@head_color: white;
+
+.navbar-brand_style{
+    color:@head_color;
+
+    &:visited {
+        color:@head_color;
+    }
+    &:hover {
+        color:@head_color;
+    }
+}
+
+.navbar_custom {
+    background-image: @bg-image;
+    box-shadow: 0 3px 3px rgba(12, 12, 10, 0.281);
+}
+
+.nav_custom>a {
+    color: @head_color;
+    &:visited {
+        background-image: @bg-image_down; 
+    }
+}
+
+.nav_custom>a:hover {
+    color: @a_color_hover;
+    background-image: @bg-image_down;
+}
+
+.open {
+    background-image: @bg-image_down;
+}

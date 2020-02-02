@@ -1,0 +1,45 @@
+
+@import "social-icon/css/style.css";
+@import "content/sidebar/sidebar.less";
+@import "footer/footer.less";
+@import "header/header.less";
+@import "content/news-blocks/news-blocks.less";
+
+@reserv_color-1: darkgoldenrod; 
+@reserv_color-2:rgb(116, 101, 66);
+
+.body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;;
+}
+
+.lk_invisible {
+    display: none;
+}
+
+
+@media (max-width: 767px) {
+    .lk_invisible {
+        display: block;
+        float: left;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 640px){
+    .footer__top-block {
+        height: 200px;
+    }
+    .footer__low-block {
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 340px){
+    .footer__top-block {
+        height: 400px;
+    }
+    .footer__low-block {
+        height: 0px;
+    }
+}
+
